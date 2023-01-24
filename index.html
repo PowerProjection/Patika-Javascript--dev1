@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Hoşgeldiniz Efendim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function getName() {
+            let nameSpan = document.querySelector('#userName')
+            let username = prompt("Merhaba", "Kullanıcı adı giriniz:")
+            username = username.charAt(0).toUpperCase() + username.slice(1);
+            nameSpan.innerHTML += username
+        }
+    </script>
+</head>
+
+<body class="bodyx" onload="getName()">
+    <div class="mainDiv">
+        <div>
+            <p class="text">Merhaba <span class="userInfo" id='userName'></span>, hoş geldin!</p>
+        </div>
+        <div>
+            <p class="text">
+                <span id="dateSpan"></span>
+                tarihinde
+            </p>
+        </div>
+        <div>
+            <p class="text"><strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın
+                Javascript bölümü 1. ödevindesin.</p>
+        </div>
+    </div>
+    <script src="scripts/clock.js"></script>
+</body>
+
+</html>
